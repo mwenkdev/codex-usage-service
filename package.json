@@ -1,16 +1,35 @@
 {
   "name": "codex-usage-service",
   "version": "1.0.0",
-  "description": "",
+  "description": "Expose Codex/ChatGPT subscription rate-limit information over a small REST API.",
   "scripts": {
+    "build": "tsc",
     "test": "node --import tsx --test src/**/*.test.ts",
     "dev": "tsx watch src/app.ts",
     "start": "tsx src/app.ts",
+    "start:prod": "node dist/app.js",
     "typecheck": "tsc --noEmit"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "codex",
+    "chatgpt",
+    "usage",
+    "fastify",
+    "n8n"
+  ],
+  "author": "Mike Wenk",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mwenkdev/codex-usage-service.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mwenkdev/codex-usage-service/issues"
+  },
+  "homepage": "https://github.com/mwenkdev/codex-usage-service#readme",
+  "engines": {
+    "node": ">=24"
+  },
   "type": "module",
   "dependencies": {
     "fastify": "^5.11.3"

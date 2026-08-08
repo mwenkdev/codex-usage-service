@@ -1,4 +1,12 @@
 node_modules/
 dist/
+.coverage/
+.DS_Store
+.idea/
+.vscode/
+.npmrc
 .env
+.env.*
+!.env.example
 .codex/
+auth.json
