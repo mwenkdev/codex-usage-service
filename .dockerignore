@@ -1,0 +1,14 @@
+.git
+.github
+.codex
+.env
+.env.*
+.npmrc
+auth.json
+node_modules
+dist
+npm-debug.log*
+Dockerfile*
+README.md
+AGENTS.md
+CLAUDE.md
