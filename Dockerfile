@@ -11,7 +11,7 @@ COPY src ./src
 RUN npm run build && npm prune --omit=dev
 
 FROM node:24-bookworm-slim AS runtime
-ARG CODEX_VERSION=0.147.0
+ARG CODEX_VERSION=0.164.0
 
 RUN apt-get update \
     && apt-get install --yes --no-install-recommends ca-certificates \
